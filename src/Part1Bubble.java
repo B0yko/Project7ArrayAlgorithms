@@ -32,7 +32,10 @@ public class Part1Bubble {
             }
         }
         bubbleSort(a);
-        System.out.println("----------------------------");
+        for (int barrier = 0; barrier < a.length; barrier++) {
+            System.out.print("---");
+        }
+        System.out.println();
         for (int i = 0; i < a.length; i++) {
             if (i == (a.length - 1)) {
                 System.out.print(a[i] + "\n \n");
@@ -52,7 +55,10 @@ public class Part1Bubble {
             }
         }
         bubbleSort(a);
-        System.out.println("---------------------------");
+        for (int barrier = 0; barrier < a.length; barrier++) {
+            System.out.print("---");
+        }
+        System.out.println();
         for (int i = 0; i < a.length; i++) {
             if (i == (a.length - 1)) {
                 System.out.print(a[i] + "\n \n");
@@ -92,10 +98,4 @@ public class Part1Bubble {
             }
         }
     }
-        public static void printArray ( int[] a){
-            for (int num : a) {
-                System.out.print(num + "  ");
-            }
-            System.out.println("\n");
-        }
-    }
+}
