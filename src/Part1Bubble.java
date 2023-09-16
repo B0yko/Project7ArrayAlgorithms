@@ -10,6 +10,7 @@ public class Part1Bubble {
             if (answer.equalsIgnoreCase("y")) {
                 userArray();
             } else randomArray();
+            in.nextLine();
             System.out.println("Do you want to start again? (Y/N)");
             String sanswer = in.nextLine();
             if (!sanswer.equalsIgnoreCase("y")) {
